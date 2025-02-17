@@ -1,0 +1,29 @@
+<div class="game-board">
+  @for(pizza of board; track pizza) {
+  <div class="pizza">
+    <div class="pizza-slices">
+      @for(slice of pizza; track slice) {
+      <div
+           class="slice"
+           [class.selected]="slice === 1">
+      </div>
+      }
+    </div>
+  </div>
+  }
+</div>
+<div class="pieces">
+  @for(option of options; track option) {
+  <div class="pizza">
+    <div class="pizza-slices">
+      @for(slice of option; track slice) {
+        <div
+          class="slice"
+          [class.selected]="slice === 1"
+        >
+        </div>
+      }
+    </div>
+  </div>
+  }
+</div>
